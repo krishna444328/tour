@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Equal Divs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .main-box {
+            width: 400px;
+            height: 400px; /* Total container height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .child-box {
+            flex: 1; /* Equal height for all divs */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+
+        .image-box {
+            background: url('https://via.placeholder.com/400x100') no-repeat center/cover;
+        }
+
+        .text-box-1 {
+            background-color: #f8d7da; /* Light Red */
+        }
+
+        .text-box-2 {
+            background-color: #d4edda; /* Light Green */
+        }
+
+        .text-box-3 {
+            background-color: #cce5ff; /* Light Blue */
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-box">
+    <div class="child-box image-box"></div>
+    <div class="child-box text-box-1">Text 1</div>
+    <div class="child-box text-box-2">Text 2</div>
+    <div class="child-box text-box-3">Text 3</div>
+</div>
+
+</body>
+</html>

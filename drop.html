@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan Tour Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .spe-title h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+
+        .title-line {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .title-line div {
+            width: 30px;
+            height: 3px;
+            background: #ff9800;
+        }
+
+        .spe-title p {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Grid Layout */
+        .tour-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        /* Large Image */
+        .big-tour-card {
+            grid-row: span 2;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .big-tour-card img {
+            width: 100%;
+            height: 395px;
+            object-fit: cover;
+        }
+
+        /* Text Overlay (Only Text on Image) */
+        .tour-info {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Small Images Grid */
+        .small-tour-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .tour-card {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .tour-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* Only Text on Small Images */
+        .tour-card .tour-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .tour-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .small-tour-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .big-tour-card {
+                grid-row: auto;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .small-tour-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="spe-title">
+        <h1>Rajasthan Tour Packages</h1>
+        <div class="title-line">
+            <div class="tl-1"></div>
+            <div class="tl-2"></div>
+            <div class="tl-3"></div>
+        </div>
+        <p>Budget Rajasthan tour packages starting from Delhi or Jaipur under a trusted, expert and experienced tour manager for hassle-free smooth travel experience.</p>
+    </div>
+
+    <!-- Tours Grid -->
+    <div class="tour-grid">
+        <!-- Large Image -->
+        <div class="big-tour-card">
+            <img src="taj1.jpg" alt="Golden Triangle Tour">
+            <div class="tour-info">
+                Golden Triangle Tour - ₹22,854/-
+            </div>
+        </div>
+
+        <!-- Small Images Grid -->
+        <div class="small-tour-grid">
+            <div class="tour-card">
+                <img src="home3.jpg" alt="Jaipur Tour">
+                <div class="tour-info">
+                    Jaipur Tour - ₹8,710/-
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="home2.jpg" alt="Rajasthan Desert Tour">
+                <div class="tour-info">
+                    Rajasthan Desert Tour - ₹35,915/-
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="home1.jpg" alt="Wildlife Tour Package">
+                <div class="tour-info">
+                    Rajasthan Wildlife Tour - ₹17,082/-
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="home4.jpg" alt="Complete Rajasthan Tour">
+                <div class="tour-info">
+                    Complete Rajasthan - ₹35,915/-
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
